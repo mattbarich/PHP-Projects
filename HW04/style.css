@@ -1,0 +1,18 @@
+body{
+    background-color: burlywood;
+}
+input:hover[type=submit]{
+    background: indigo;
+}
+input[type=checkbox]{
+    color: black;
+}
+.select-selected{
+    background-color: green;
+}
+h1{
+    color: cornflowerblue;
+}
+p1{
+    color: black;
+}

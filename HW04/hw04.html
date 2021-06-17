@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW4 Forms</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <form action="HW04.php", method="post">
+
+        <h1>Welcome to Crackhouse Coffee</h1>
+
+        <fieldset>
+            <legend>Coffee Order</legend>
+            <label>Name for order: </label>
+            <input type="text"  name="name" required><br>
+
+            <label>Pick-up Option</label><br>
+            <input type="radio" name="option" value="Place Now" checked>Place Now<br>
+            <input type="radio" name="option" value="When I choose">Set time<br>
+            <select name="time">
+                <option value="15">15 Mins</option>
+                <option value="25">30 Mins</option>
+                <option value="30">45 Mins</option>
+                <option value="60">1 Hour</option>
+            </select><br>
+
+            <label>Drink Size: </label>
+            <select name="drinkType">
+                <option value="On the rocks- Iced Coffee">On the rocks- Iced Coffee</option>
+                <option value="The Black Sea- Black Coffee">The Black Sea- Black Coffee</option>
+                <option value="Side-by-Side- Double shot Espresso">Side-by-Side- Double shot Espresso</option>
+                <option value="White Girl Classic - Latte">White Girl Classic - Latte</option>
+            </select><br>
+
+            <label>Size of Drink: </label><br>
+            <input type="radio" name="size" value="small" checked>Small<br>
+            <input type="radio" name="size" value="medium">Medium<br>
+            <input type="radio" Name="size" value="large">Large<br>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <input type="checkbox" name="extras[]" value="cream">Cream<br>
+                <input type="checkbox" name="extras[]" value="milk">Milk<br>
+                <input type="checkbox" name="extras[]" value="alcohol">Alcohol<br>
+                <input type="checkbox" name="extras[]" value="cinnamon">Cinnamon<br>
+            </fieldset>
+            <input type="submit" value="submit"><br>
+        </fieldset>
+    </form>
+</body>
+</html>
